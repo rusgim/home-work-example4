@@ -32,6 +32,47 @@ public class Main {
             }
         }
     }
+        int monthNumber = 13;
+        switch (monthNumber) {
+            case 1:
+                System.out.println("Январь - это зима");
+                break;
+            case 2:
+                System.out.println("Февраль - это зима");
+                break;
+            case 3:
+                System.out.println("Март - это весна");
+                break;
+            case 4:
+                System.out.println("Апрель - это весна");
+                break;
+            case 5:
+                System.out.println("Май - это весна");
+                break;
+            case 6:
+                System.out.println("Июнь - это лето");
+                break;
+            case 7:
+                System.out.println("Июль - это лето");
+                break;
+            case 8:
+                System.out.println("Август - это лето");
+                break;
+            case 9:
+                System.out.println("Сентябрь - это осень");
+                break;
+            case 10:
+                System.out.println("Октябрь - это осень");
+                break;
+            case 11:
+                System.out.println("Ноябрь - это осень");
+                break;
+            case 12:
+                System.out.println("Декабрь - это зима");
+                break;
+            default:
+                System.out.println("Такого дня не существует");
+        }
     }
     }
 
