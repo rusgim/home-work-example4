@@ -71,7 +71,7 @@ public class Main {
                 System.out.println("Декабрь - это зима");
                 break;
             default:
-                System.out.println("Такого дня не существует");
+                System.out.println("Такого дня не сущесвует");
         }
     }
     }
