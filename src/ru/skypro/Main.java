@@ -19,8 +19,20 @@ public class Main {
         } else {
             System.out.println( year + " не является високосным годом");
         }
-        }
 
+        int deliveryDistance = 99;
+        if (deliveryDistance < 20) {
+        System.out.println("Потребуется дней: 1 день");
+    } else {
+        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            System.out.println("Потребуется дней: 2 день");
+        } else {
+            if (deliveryDistance >= 60 && deliveryDistance < 100) {
+                System.out.println("Потребуется дней: 3 дня");
+            }
+        }
+    }
+    }
     }
 
 
