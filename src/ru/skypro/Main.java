@@ -3,6 +3,13 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
+        byte clientOS = 1;
+        if ( clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Андроид по ссылке");
+        }
+
         byte clientOS2 = 1;
         int clientDeviceYear = 2014;
         if (clientOS2 == 0 && clientDeviceYear <= 2014) {
@@ -13,7 +20,7 @@ public class Main {
             System.out.println("Установите обычную версию");
         }
 
-        int year = 2001;
+        int year = 1000;
         if (( year % 4 == 0) && ((year % 100 != 0) || year % 400 == 0)) {
             System.out.println(year + " високосный год");
         } else {
