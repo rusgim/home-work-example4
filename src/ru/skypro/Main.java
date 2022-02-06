@@ -27,17 +27,20 @@ public class Main {
             System.out.println(year + " не является високосным годом");
         }
 
-        int deliveryDistance = 99;
-        if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней: 1 день");
-        } else if (deliveryDistance < 60) {
-            System.out.println("Потребуется дней: 2 дня");
-        } else if (deliveryDistance < 100) {
-            System.out.println("Потребуется дней: 3 дня");
+        int deliveryDistance = 9;
+        int rezult = 1;
+        if (deliveryDistance > 20) {
+            rezult++;
         }
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            rezult++;
+        }
+        System.out.println("Потребуется дней " + rezult);
+
 
         int monthNumber = 8;
         switch (monthNumber) {
+            case 12:
             case 1:
             case 2:
             System.out.println("Сезон - зима");
@@ -56,9 +59,6 @@ public class Main {
             case 10:
             case 11:
                 System.out.println("Сезон - это осень");
-                break;
-            case 12:
-                System.out.println("Сезон - это зима");
                 break;
             default:
                 System.out.println("Такого месяца не сущесвует");
